@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <style>
+        nav {
+            background-image: url('img/paysage.jpg');
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+       
+        <nav>
+            <div class="logo">
+                <a href="index2.html">MO Games</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index2.html">Accueil</a></li>
+                <li><a href="offre.html">Nos games</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section> 
+
+    <section class="destinations">
+       
+        <h2>Contactez-nous</h2>
+        <form action="process_form.php" method="post" enctype="multipart/form-data">
+           
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+           
+
+         
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}">
+            
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="file">Choisir un fichier :</label>
+            <input type="file" id="file" name="file" accept=".pdf, .doc, .docx">
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="left-col">
+           
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="rights-text">© 2024 Created By <b>Mohamed Feki & Barkia Omar </b>  All Rights Reserved.</p>
+          </div>
+        </footer>
+            
+
+</body>
+</html>

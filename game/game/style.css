@@ -1,0 +1,111 @@
+body {
+  display: grid;
+  align-items: center;
+background-image: url(img/back.jpg);
+  height: 100vh;
+  margin: 0;
+  background-color: #fce4ec; /* Light pink background color */
+  background-size: cover;
+  background-position: center;
+}
+body img{ width: 100%;}
+
+.game {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid #0fbedd; /* Pink border */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive; /* Fun font */
+  color: #333;
+
+
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+ 
+}
+
+.card {
+  width: 100%;
+  height: 150px;
+  background-image:url(img/card.webp); /* Pink card background */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff; /* White text color */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.hidden img {
+  display: flex;
+}
+
+#stats-container {
+  margin-top: 20px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to separate from the game board */
+}
+
+#congratulations-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: none;
+}
+
+#congratulations-popup h2 {
+  color: #4caf50; /* Green text color */
+  font-family: 'Chewy', cursive; /* Fun font */
+}
+
+#restart-button {
+  background-color: #ffcd05; /* Green button color */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-image:url(img/button.png); /* Pink card background */
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive; /* Fun font */
+  color: #333;
+  font-size: large;
+  background-position: center;
+}
+
+#restart-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.current-player {
+  color: blue;
+}

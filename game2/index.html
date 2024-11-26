@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Game Title</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemon</h1>
+        <p>Select the number of players:</p>
+        <label>
+            <input type="radio" name="numPlayers" value="1" onclick="startGame(1)">
+            1 Player
+        </label>
+        <label>
+            <input type="radio" name="numPlayers" value="2" onclick="startGame(2)">
+            2 Players
+        </label>
+
+        <div class="buttons-container">
+            <button id="startButton"  onclick="startGameClicked()">Start Game</button>
+            <button onclick="openGameGuide()">Game Guide</button>
+        </div>
+    </div>
+
+    <div id="gameGuideModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeGameGuideModal()">&times;</span>
+            <p>Write your game guide content here...</p>
+        </div>
+    </div>
+    
+  <div class="dummy-text">
+    <video autoplay muted loop playsinline id="video-background">
+      <source src="Clash Royale.mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+
+    <script src="script.js"></script>
+</body>
+</html>

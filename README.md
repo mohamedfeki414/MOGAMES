@@ -24,4 +24,8 @@ Créer une plateforme dynamique permettant aux utilisateurs de jouer à plusieur
 ## Installation et Exécution
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
+<<<<<<< HEAD
    git clone https://github.com/votre-utilisateur/votre-repo.git
+=======
+   git clone  https://github.com/mohamedfeki414/MOGAMES.git
+>>>>>>> 0497c04239396d51579e010e4fb080089ab6cce3
